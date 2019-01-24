@@ -6,4 +6,7 @@ rvazquez@homer:~/virtualenvs$ source dealership-env/bin/activate
 (dealership-env) rvazquez@homer:~/codigo/personal$ cd Dealership/
 (dealership-env) rvazquez@homer:~/codigo/personal/Dealership$ python3.7 manage.py runserver ## testing runserver
 (dealership-env) rvazquez@homer:~/codigo/personal/Dealership$ python3.7 manage.py startapp VehicleInventory ## starting app
-
+(dealership-env) rvazquez@homer:~/codigo/personal/Dealership$ python3.7 manage.py migrate
+## modify Dealership/VehicleInventory/models.py
+(dealership-env) rvazquez@homer:~/codigo/personal/Dealership$ python3.7 manage.py makemigrations
+(dealership-env) rvazquez@homer:~/codigo/personal/Dealership$ python3.7 manage.py migrate
