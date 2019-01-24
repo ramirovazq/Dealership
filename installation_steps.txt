@@ -1,0 +1,11 @@
+rvazquez@homer:~/virtualenvs$ virtualenv -p python3.7 newdealership-env
+rvazquez@homer:~/virtualenvs$ $ source newdealership-env/bin/activate
+(dealership-env) rvazquez@homer:~/virtualenvs$ cd
+(dealership-env) rvazquez@homer:~$ git clone https://github.com/ramirovazq/Dealership.git
+(dealership-env) rvazquez@homer:~$ cd Dealership/
+(dealership-env) rvazquez@homer:~$ pip3.7 install -r requirements.txt 
+(dealership-env) rvazquez@homer:~$ python3.7 manage.py migrate
+(dealership-env) rvazquez@homer:~$ python3.7 manage.py runserver
+## server running, go to browser http://127.0.0.1:8000/vehicles/
+## user: admin
+## pass: holamundo
